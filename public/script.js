@@ -18,7 +18,10 @@ myVideo.muted = true
 const peers = {}
 navigator.mediaDevices.getUserMedia({
   video: true,
-  audio: true
+  audio: true,
+  frameRate: {
+    "max": "20"
+}
 }).then(stream => {
   addVideoStream(myVideo, stream)
 
