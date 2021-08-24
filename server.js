@@ -40,5 +40,5 @@ io.on('connection', socket => {
   })
 })
 
-server.listen(3000)
+httpsServer.listen(3001)
 //httpsServer.listen(443, function () {console.log("Example app listening at https://%s:%s", httpsServer.address().address, httpsServer.address().port);});

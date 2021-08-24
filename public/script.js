@@ -38,8 +38,9 @@ navigator.mediaDevices.getUserMedia({
       addVideoStream(video, userVideoStream)
     })
     call.on("close", () => {
-      console.log("dude fuckin poofed")
+      console.log("call closed, attempting to reconnect")
       video.remove()
+      peer.call()
     })
   })
 
