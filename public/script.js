@@ -17,7 +17,7 @@ const myPeer = new Peer({
   config: {
     iceServers: [
       {
-        urls: "turn:3.70.23.101:3478",
+        urls: "turn:18.192.198.197:3478",
         username: "webrtctest",
         credential: "servicelinkr",
       },
